@@ -1,13 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
+  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Велосипеды</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <img src="img/icon-logo.svg" alt="Логотипа" width="68" height="21">
+        </a>
+      </div>
+      <div class="page-header__navigation">
+        <nav class="navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg width="24" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+            <svg width="20" height="20">
+              <use xlink:href="sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="navigation__wrapper">
+            <ul class="navigation__list site-navigation">
+              <li class="site-navigation__item">
+                <a>О нас</a>
+              </li>
+              <li class="site-navigation__item">
+                <a>Виды велосипедов</a>
+              </li>
+              <li class="site-navigation__item">
+                <a>Видео про велосипеды</a>
+              </li>
+              <li class="site-navigation__item">
+                <a>Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="intro">
+      <div class="intro-content">
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+      <form class="form">
+        <div class="form__wrapper">
+          <ul class="form__item-list">
+            <li>
+              <label>
+                <input value="Введите Ваше Имя" type="text" required="">
+              </label>
+            </li>
+            <li>
+              <label>
+                <input value="Введите Ваше Имя" type="text" required="">
+              </label>
+            </li>
+          </ul>
+          <button type="submit">Подобрать велосипед мечты</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="facts-section">
+      <div class="facts-section__wrapper">
+        <h2>Несколько фактов о нас</h2>
+        <ul class="facts-list">
+          <li class="facts-list__item">Самый широкий выбор велосипедов!</li>
+          <li class="facts-list__item">Доставка велосипедов по всей России!</li>
+          <li class="facts-list__item">Большой выбор крутых аксессуаров!</li>
+          <li class="facts-list__item">Профессиональные консультации!</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <h2>Виды велосипедов</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img src="img/promo-bike-road.jpg" alt="Дорожный велосипед" width="342" height="503">
+          </li>
+          <li class="gallery__item">
+            <img src="img/promo-bike-mountain.jpg" alt="Горный велосипед" width="342" height="566">
+          </li>
+          <li class="gallery__item">
+            <img src="img/promo-bike-children.jpg" alt="Детский велосипед" width="342" height="513">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <div class="video-section__container">
+        <div class="video-section__text-content">
+          <h2>Видео про велосипеды</h2>
+          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        </div>
+        <div class="video-section__main-content">
+          <video width="400" height="300" controls="controls" poster="img/video-intro.jpg"></video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="map">
+        <div class="map__wrapper">
+          <h2>Как нас найти</h2>
+          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <div class="map__iframe-wrapper">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz" style="border: none;" allowfullscreen=""></iframe>
+            <img class="map__iframe-img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Кэт Энерджи на карте">
+          </div>
+        </div>
+      </section>
+      <div class="page-footer__contacts contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__column">
+            <div class="contacts-phone">
+              <a href="tel:+749978468446">+7(499)-784-684-46</a>
+            </div>
+            <div class="contacts-mail">
+              <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
