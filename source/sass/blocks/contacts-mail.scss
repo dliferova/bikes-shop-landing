@@ -1,0 +1,9 @@
+.contacts-mail a::before {
+  content: '';
+  width: 26px;
+  height: 20px;
+  margin-right: 15px;
+  background-image: url('/img/icon-mail.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

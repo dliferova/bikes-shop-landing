@@ -1,0 +1,104 @@
+.intro {
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+  }
+}
+
+.intro__container {
+  @media (min-width: $desktop-width-min) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 327px;
+    column-gap: 150px;
+    min-height: 825px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.intro__content {
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    align-items: center;
+    background-color: $ordinary-black;
+    min-height: 340px;
+    background-image: url("/img/main-intro-bike-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 340px;
+    background-position-x: center;
+    position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/main-intro-bike-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $ordinary-black;
+    background-image: url("/img/main-intro-bike-mobile.jpg");
+      background-size: auto 390px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/img/main-intro-bike-mobile@2x.jpg");
+      }
+  }
+}
+
+.intro__content-logo-wrapper {
+  margin: 0 0 30px 0;
+
+  @media (max-width: $tablet-width-max) {
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    margin: 0;
+  }
+}
+
+.intro__content-text {
+  @media (max-width: $tablet-width-max) {
+    max-width: 435px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.intro__content-text h1 {
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: bold;
+  color: $ordinary-white;
+  margin: 0 0 24px 0;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.intro__content-text p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: lighter;
+  color: $ordinary-white;
+  margin: 0 0 10px 0;
+  opacity: 0.8;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.intro__feedback-form {
+  @media (max-width: $tablet-width-max) {
+    align-self: center;
+  }
+}
+
+

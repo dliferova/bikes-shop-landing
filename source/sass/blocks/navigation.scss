@@ -1,0 +1,87 @@
+.navigation__list {
+  @include resetting-styles-list;
+  width: 833px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    width: auto;
+    padding: 100px 0 138px;
+    margin: 0 auto;
+  }
+}
+
+.navigation__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    background-color: $ordinary-white;
+  }
+}
+
+.navigation__icon-menu {
+  @media (max-width: $mobile-width-only) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.navigation__icon-cross {
+  @media (max-width: $mobile-width-only) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+//Стартовое состояние проекта - кнопка бургера + закрытое меню
+
+@media (max-width: $tablet-width-max) {
+  .navigation .navigation__list {
+    display: none;
+  }
+
+  .navigation .page-header__toggle {
+    background-color: #0ad9c6;
+  }
+
+  .navigation__toggle .navigation__icon-cross {
+    display: none;
+  }
+
+  //Cостояние - отключен JS
+  .navigation_nojs .navigation__list {
+    display: block;
+  }
+
+  .navigation_nojs .navigation__toggle {
+    display: none;
+  }
+
+  //Cостояние нажали на бургер
+  .navigation_opened {
+
+    .navigation__icon-cross {
+      display: block;
+    }
+
+    .navigation__icon-menu {
+      display: none;
+    }
+
+    .page-header__toggle {
+      background-color: $ordinary-white;
+    }
+  }
+
+}

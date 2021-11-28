@@ -1,7 +1,21 @@
 $accent-color: #0ad9c6;
 $titles-black: #1f1f1f;
+$main-background: #1c1c1c;
+$input-text-black: rgba(28, 28, 28, 0.5);
 $background-black: #131314;
 $ordinary-black: #000000;
+$dark-grey: #48494d;
 $ordinary-white: #ffffff;
 $background-white: #f6f7f9;
+$background-pink: #f6f6f6;
 $input-grey: #c9ccd4;
+
+/*
+- мобильная версия — 320px - 767px;
+- планшетная версия — 768px - 1023px;
+- десктопная версия — от 1024px и выше
+*/
+$mobile-width-only: 767px;
+$tablet-width-min: 768px;
+$tablet-width-max: 1023px;
+$desktop-width-min: 1024px;

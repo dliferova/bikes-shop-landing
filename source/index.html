@@ -11,20 +11,15 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__container">
-      <div class="logo">
-        <a class="logo__link" href="#">
-          <img src="img/icon-logo.svg" alt="Логотипа" width="68" height="21">
-        </a>
-      </div>
-      <div class="page-header__navigation">
-        <nav class="navigation">
-          <button class="navigation__toggle" type="button">
+      <div class="page-header__navigation-wrapper">
+        <nav class="page-header__navigation navigation navigation_nojs">
+          <button class="page-header__toggle navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg width="24" height="18">
+            <svg class="navigation__icon-menu" width="24" height="18">
               <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
             </svg>
-            <svg width="20" height="20">
-              <use xlink:href="sprite_auto.svg#icon-cross"></use>
+            <svg class="navigation__icon-cross" width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
             </svg>
           </button>
           <div class="navigation__wrapper">
@@ -48,28 +43,53 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="intro">
-      <div class="intro-content">
-        <h1>Мы продаем велосипеды</h1>
-        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-      </div>
-      <form class="form">
-        <div class="form__wrapper">
-          <ul class="form__item-list">
-            <li>
-              <label>
-                <input value="Введите Ваше Имя" type="text" required>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input value="Введите Ваше Имя" type="text" required>
-              </label>
-            </li>
-          </ul>
-          <button type="submit">Подобрать велосипед мечты</button>
+    <section class="page-main__intro intro">
+      <div class="container">
+        <div class="intro__container">
+          <div class="intro__content">
+            <div class="intro__content-logo-wrapper">
+              <div class="logo-component">
+                <a class="logo-component__link" href="#">
+                  <img src="img/icon-logo.svg" alt="Логотипа" width="68" height="21">
+                </a>
+              </div>
+            </div>
+            <div class="intro__content-text">
+              <h1>Мы продаем велосипеды</h1>
+              <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            </div>
+          </div>
+          <div class="intro__feedback-form">
+            <form class="form" method="post" action="https://echo.htmlacademy.ru">
+              <div class="form__wrapper">
+                <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+                <ul class="form__list">
+                  <li class="form__list__field-item form-field">
+                    <label for="name-field"></label>
+                    <div class="form-field__input-container">
+                      <input placeholder="Введите Ваше Имя"
+                             type="text"
+                             id="name-field"
+                             required>
+                    </div>
+                  </li>
+                  <li class="form__list__field-item form-field">
+                    <label for="phone-field"></label>
+                    <div class="form-field__input-container">
+                      <input placeholder="Введите Ваш номер телефона"
+                             type="tel"
+                             id="phone-field"
+                             pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+                             required>
+                    </div>
+                  </li>
+                </ul>
+                <button class="form__button" type="submit" value="Отправить форму">Подобрать велосипед мечты</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </form>
+      </div>
     </section>
 
     <section class="facts-section">
@@ -124,23 +144,23 @@
             <iframe class="map__iframe"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz"
                     style="border: none;" allowfullscreen=""></iframe>
-            <img class="map__iframe-img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Кэт Энерджи на карте">
+            <img class="map__iframe-img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Мы на карте">
           </div>
         </div>
       </section>
       <div class="page-footer__contacts contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__column">
+          <div class="contacts-mail">
+            <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          </div>
             <div class="contacts-phone">
               <a href="tel:+749978468446">+7(499)-784-684-46</a>
-            </div>
-            <div class="contacts-mail">
-              <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

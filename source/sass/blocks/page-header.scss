@@ -1,0 +1,35 @@
+.page-header_opened {
+  @media (max-width: $tablet-width-max) {
+    height: auto;
+    width: 100%;
+    background-color: $ordinary-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .navigation__list {
+      display: block;
+    }
+  }
+}
+
+.page-header__container {
+  @media (min-width: $desktop-width-min) {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  position: relative;
+}
+
+
+.page-header__navigation-wrapper {
+  @media (min-width: $desktop-width-min) {
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+  }
+}

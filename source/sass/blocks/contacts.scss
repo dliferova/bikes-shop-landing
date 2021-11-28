@@ -1,0 +1,17 @@
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 558px;
+}
+
+.contacts-phone a,
+.contacts-mail a {
+  text-decoration: none;
+  color: $ordinary-black;
+  opacity: 0.5;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}

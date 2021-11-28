@@ -1,0 +1,43 @@
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width-max) {
+    align-items: center;
+  }
+}
+
+.form p {
+  font-size: 17px;
+  line-height: 28px;
+  color: $ordinary-white;
+  text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    color: $ordinary-black;
+    max-width: 321px;
+  }
+}
+
+.form__list {
+  @include resetting-styles-list;
+}
+
+.form__button {
+  display: inline-block;
+  padding: 15px 48px;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  color: $ordinary-black;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+
+  background-color: $accent-color;
+
+  @media (max-width: $tablet-width-max ) {
+    padding: 15px 34px;
+    max-width: 288px;;
+  }
+}

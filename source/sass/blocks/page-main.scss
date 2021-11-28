@@ -1,0 +1,14 @@
+.page-main__intro {
+  @media (min-width: $desktop-width-min) {
+    background-color: $main-background;
+    background-image: url("/img/main-intro-bike.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 825px;
+    background-position-x: center;
+    margin: 0 0 150px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/main-intro-bike@2x.jpg");
+    }
+  }
+}

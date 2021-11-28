@@ -1,0 +1,16 @@
+.form-field__input-container input {
+  display: flex;
+  font-size: 15px;
+  line-height: 24px;
+  color: $input-text-black;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 327px;
+  border: 1px solid $input-grey;
+  padding: 14px 20px 10px 29px;
+  margin: 0 0 20px 0;
+
+  @media (max-width: $tablet-width-max) {
+    width: 288px;
+  }
+}
