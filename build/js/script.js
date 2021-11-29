@@ -15,14 +15,12 @@ headerToggle.addEventListener('click', function () {
 // Реализация якорей
 
 const hideMenu = () => {
-  console.log('Выполнено 2')
   pageHeader.classList.remove('page-header_opened');
   navigationElement.classList.remove('navigation_opened');
 };
 
 siteNavigation.querySelector('#nav-item-about-us')
   .addEventListener('click', (evt) => {
-    console.log('Выполнено')
     evt.preventDefault();
     hideMenu();
     document.querySelector('.facts-section').scrollIntoView({behavior: "smooth"})

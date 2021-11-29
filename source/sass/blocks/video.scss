@@ -1,0 +1,19 @@
+.video {
+  background-color: $ordinary-black;
+  min-height: 706px;
+  position: relative;
+}
+
+.video__text-content h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $ordinary-white;
+}
+
+.video__text-content p {
+  font-size: 16px;
+  line-height: 28px;
+  color: $ordinary-white;
+  font-weight: lighter;
+}
