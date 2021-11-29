@@ -128,14 +128,22 @@
   </main>
 
   <footer class="page-footer">
+    <div class="container">
     <div class="page-footer__wrapper">
-      <section class="map">
+      <section class="page-footer__map map">
+        <h2 class="visually-hidden">Магазин велосипедов на карте</h2>
         <div class="map__wrapper">
-          <h2>Как нас найти</h2>
-          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-          <div class="map__iframe-wrapper">
-            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz" style="border: none;" allowfullscreen=""></iframe>
-            <img class="map__iframe-img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Кэт Энерджи на карте">
+          <div class="map__content">
+            <h3>Как нас найти?</h3>
+            <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          </div>
+          <div class="map__location-wrapper">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz" style="border: 0;" allowfullscreen=""></iframe>
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" alt="Адрес магазина по ул. Б. Конюшенная, дом 19/8 Санкт-Петербург" width="957" height="530">
+              </picture>
           </div>
         </div>
       </section>
@@ -144,14 +152,15 @@
           <div class="contacts-mail">
             <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
           </div>
-            <div class="contacts-phone">
+          <div class="contacts-phone">
               <a href="tel:+749978468446">+7(499)-784-684-46</a>
-            </div>
           </div>
         </div>
       </div>
-    
+    </div>
+    </div>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>

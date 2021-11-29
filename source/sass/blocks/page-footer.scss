@@ -1,1 +1,18 @@
+.page-footer__wrapper {
+  max-width: 997px;
+  padding: 0 20px 90px;
+  margin: 0 auto ;
 
+  @media (max-width: $tablet-width-max) {
+    max-width: 698px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.page-footer__map {
+  margin: 0 0 20px;
+}

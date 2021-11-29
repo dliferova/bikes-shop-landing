@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: 558px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+  }
 }
 
 .contacts-phone a,
@@ -12,6 +18,7 @@
   opacity: 0.5;
   font-size: 16px;
   line-height: 24px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
 }
