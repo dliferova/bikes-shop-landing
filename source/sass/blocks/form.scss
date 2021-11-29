@@ -40,4 +40,12 @@
     padding: 15px 34px;
     max-width: 288px;;
   }
+
+  &:hover {
+    background-color: rgba($accent-color, 0.7);
+  }
+
+  &:active {
+    background-color: $accent-color-darker;
+  }
 }

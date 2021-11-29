@@ -46,4 +46,3 @@ siteNavigation.querySelector('#nav-item-contacts')
     hideMenu();
     document.querySelector('.contacts').scrollIntoView({behavior: "smooth"})
   })
-

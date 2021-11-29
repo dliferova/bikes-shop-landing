@@ -1,16 +1,33 @@
 .form-field__input-container input {
   display: flex;
+  width: 100%;
   font-size: 15px;
   line-height: 24px;
   color: $input-text-black;
   box-sizing: border-box;
   border-radius: 6px;
-  width: 327px;
   border: 1px solid $input-grey;
+  background-color: $ordinary-white;
   padding: 14px 20px 10px 29px;
   margin: 0 0 20px 0;
 
   @media (max-width: $tablet-width-max) {
     width: 288px;
+  }
+
+  &:hover {
+    border: 1px solid $input-grey-darker;
+    background-color: rgba($ordinary-white, 0.7);
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 1px solid $border-input-error;
+  }
+
+  &:focus {
+    outline: 0;
+    background-color: rgba($ordinary-white, 0.7);
+    border: 1px solid $input-grey-darker;
+    color: $ordinary-white;
   }
 }
