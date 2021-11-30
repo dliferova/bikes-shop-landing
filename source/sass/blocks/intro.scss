@@ -60,7 +60,7 @@
   }
 }
 
-.intro__content-text {
+.intro__promo-text {
   @media (max-width: $tablet-width-max) {
     max-width: 435px;
     margin: 0 auto;
@@ -68,7 +68,7 @@
   }
 }
 
-.intro__content-text h1 {
+.intro__promo-slogan-large {
   font-size: 46px;
   line-height: 64px;
   font-weight: bold;
@@ -81,7 +81,7 @@
   }
 }
 
-.intro__content-text p {
+.intro__promo-slogan {
   font-size: 20px;
   line-height: 32px;
   font-weight: lighter;

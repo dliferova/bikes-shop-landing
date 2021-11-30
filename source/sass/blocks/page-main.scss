@@ -1,6 +1,4 @@
 .page-main__intro {
-  margin: 0 0 150px 0;
-
   @media (min-width: $desktop-width-min) {
     background-color: $main-background;
     background-image: url("/img/main-intro-bike.jpg");
@@ -12,14 +10,14 @@
       background-image: url("/img/main-intro-bike@2x.jpg");
     }
   }
-
-  @media (max-width: $tablet-width-max) {
-    margin: 0 0 70px 0;
-  }
 }
 
 .page-main__facts {
-  margin: 0 0 130px 0;
+  padding: 150px 20px 130px;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 70px 20px 70px;
+  }
 }
 
 .page-main__gallery {
@@ -27,5 +25,5 @@
 }
 
 .page-main__video {
-  margin: 0 0 140px 0;
+  padding: 0 0 140px 0;
 }

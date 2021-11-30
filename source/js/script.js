@@ -23,7 +23,7 @@ siteNavigation.querySelector('#nav-item-about-us')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
     hideMenu();
-    document.querySelector('.facts-section').scrollIntoView({behavior: "smooth"})
+    document.querySelector('.facts').scrollIntoView({behavior: "smooth"})
   })
 
 siteNavigation.querySelector('#nav-item-types-bike')
@@ -37,7 +37,7 @@ siteNavigation.querySelector('#nav-item-promo-video')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
     hideMenu();
-    document.querySelector('.video-section').scrollIntoView({behavior: "smooth"})
+    document.querySelector('.video').scrollIntoView({behavior: "smooth"})
   })
 
 siteNavigation.querySelector('#nav-item-contacts')

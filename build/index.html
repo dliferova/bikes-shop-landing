@@ -44,6 +44,7 @@
   </header>
   <main class="page-main">
     <section class="page-main__intro intro">
+      <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
       <div class="container">
         <div class="intro__container">
           <div class="intro__content">
@@ -54,9 +55,9 @@
                 </a>
               </div>
             </div>
-            <div class="intro__content-text">
-              <h1>Мы продаем велосипеды</h1>
-              <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            <div class="intro__promo-text">
+              <p class="intro__promo-slogan-large">Мы продаем велосипеды</p>
+              <p class="intro__promo-slogan">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
             </div>
           </div>
           <div class="intro__feedback-form">
@@ -67,13 +68,13 @@
                   <li class="form__list__field-item form-field">
                     <label for="name-field"></label>
                     <div class="form-field__input-container">
-                      <input placeholder="Введите Ваше Имя" type="text" id="name-field" required="">
+                      <input placeholder="Введите Ваше Имя" type="text" id="name-field" name="name" required="">
                     </div>
                   </li>
                   <li class="form__list__field-item form-field">
                     <label for="phone-field"></label>
                     <div class="form-field__input-container">
-                      <input placeholder="Введите Ваш номер телефона" type="tel" id="phone-field" pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
+                      <input placeholder="Введите Ваш номер телефона" type="tel" id="phone-field" name="phone" pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
                     </div>
                   </li>
                 </ul>
@@ -86,14 +87,16 @@
     </section>
 
     <section class="page-main__facts facts" id="about-us">
-      <div class="facts__wrapper">
-        <h2>Несколько фактов о нас</h2>
-        <ul class="facts__list facts-list">
-          <li class="facts-list__item">Самый широкий выбор велосипедов!</li>
-          <li class="facts-list__item">Доставка велосипедов по всей России!</li>
-          <li class="facts-list__item">Большой выбор крутых аксессуаров!</li>
-          <li class="facts-list__item">Профессиональные консультации!</li>
-        </ul>
+      <div class="container">
+        <div class="facts__wrapper">
+          <h2>Несколько фактов о нас</h2>
+          <ul class="facts__list facts-list">
+           <li class="facts-list__item">Самый широкий выбор велосипедов!</li>
+           <li class="facts-list__item">Доставка велосипедов по всей России!</li>
+            <li class="facts-list__item">Большой выбор крутых аксессуаров!</li>
+            <li class="facts-list__item">Профессиональные консультации!</li>
+          </ul>
+        </div>
       </div>
     </section>
 
