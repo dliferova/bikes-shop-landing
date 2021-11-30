@@ -21,7 +21,12 @@
 }
 
 .page-main__gallery {
+  background-color: $background-grey;
   padding: 145px 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 50px 20px 70px;
+  }
 }
 
 .page-main__video {
