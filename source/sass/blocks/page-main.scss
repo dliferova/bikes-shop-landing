@@ -16,7 +16,11 @@
   padding: 150px 20px 150px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 70px 20px 70px;
+    padding: 70px 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 70px 10px 79px;
   }
 }
 
@@ -26,6 +30,10 @@
 
   @media (max-width: $tablet-width-max) {
     padding: 50px 20px 70px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 50px 20px 16px;
   }
 }
 

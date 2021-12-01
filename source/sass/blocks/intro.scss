@@ -43,7 +43,9 @@
   @media (max-width: $mobile-width-only) {
     background-color: $ordinary-black;
     background-image: url("/img/main-intro-bike-mobile.jpg");
-      background-size: auto 390px;
+    background-size: 320px 390px;
+    padding: 124px 0 64px 0;
+    margin: 0 0 56px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("/img/main-intro-bike-mobile@2x.jpg");
@@ -60,6 +62,10 @@
     left: 21px;
     margin: 0;
   }
+
+  @media (max-width: $mobile-width-only) {
+   left: 18px;
+  }
 }
 
 .intro__promo-text {
@@ -67,6 +73,10 @@
     max-width: 435px;
     margin: 0 auto;
     text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 280px;
   }
 }
 
@@ -81,6 +91,10 @@
     font-size: 30px;
     line-height: 40px;
     margin: 0 0 15px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 19px 0;
   }
 }
 

@@ -8,6 +8,8 @@
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
+    max-width: 280px;
+    align-items: flex-start;
   }
 }
 
@@ -30,5 +32,21 @@
 
   @media(max-width: $tablet-width-max) {
     padding: 19px 10px;
+  }
+
+  @media(max-width: $mobile-width-only) {
+    padding: 0;
+  }
+}
+
+.contacts-mail a {
+  @media(max-width: $mobile-width-only) {
+    padding: 19px 10px 10px 10px;
+  }
+}
+
+.contacts-phone a {
+  @media (max-width: $mobile-width-only) {
+    padding: 12px 10px 10px 44px;
   }
 }

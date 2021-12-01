@@ -1,8 +1,13 @@
 .contacts-mail {
-  margin: 0 74px 0 0
-};
+  margin: 0 74px 0 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+  }
+}
 
 .contacts-mail a::before {
+  display: block;
   content: '';
   width: 26px;
   height: 20px;

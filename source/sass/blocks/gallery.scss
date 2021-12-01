@@ -123,6 +123,10 @@
     bottom: 27px;
     left: -35px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    left: -19px;
+  }
 }
 
 .gallery__item-figure_decorated_double-square::before {

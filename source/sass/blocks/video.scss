@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 64px 15px 0;
+    padding: 83px 15px 0;
     min-height: 384px;
   }
 }
@@ -65,7 +65,7 @@
   top: 50%;
   transform: translateX(-50%)translateY(-50%);
 
-  @media (max-width: $tablet-width-max) {
+  @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
     width: 90px;
     height: 90px;
   }
@@ -79,6 +79,11 @@
   @media (max-width: $tablet-width-max) {
     max-width: 430px;
     margin: 0 auto 38px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 290px;
+    margin: 0 auto 54px;
   }
 }
 
