@@ -37,6 +37,21 @@
   position: relative;
 }
 
+.video__container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.video__video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .video__play-button {
   content: "";
   width: 65px;
@@ -49,10 +64,6 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%)translateY(-50%);
-
-  @media (max-width: $mobile-width-only) {
-    top: 35%;
-  }
 }
 
 .video__text-content {
