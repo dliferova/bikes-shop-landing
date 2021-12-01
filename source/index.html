@@ -115,37 +115,46 @@
           <h2>Виды велосипедов</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <figure class="gallery__item-figure">
-                <picture>
-                  <source media="(max-width: 1023px)" srcset="img/promo-bike-road-tablet.jpg, img/promo-bike-road-tablet@2x.jpg 2x">
-                  <img src="img/promo-bike-road.jpg" srcset="img/promo-bike-road@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
-                </picture>
+              <div class="gallery__item-wrapper">
+                <figure class="gallery__item-figure gallery__item-figure_decorated_big-ellipse">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo-bike-road.webp 1x, img/promo-bike-road@2x.webp 2x">
+                    <!-- 1x: 342*503; 2x: 684*1,006-->
+                    <img src="img/promo-bike-road.jpg" srcset="img/promo-bike-road@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503" data-object-fit="cover">
+                  </picture>
                   <figcaption class="gallery__item-figcaption">
-                   <a href="">Дорожный велосипед</a>
+                    <a href="">Дорожный велосипед</a>
                   </figcaption>
-              </figure>
+                </figure>
+              </div>
             </li>
-            <li class="gallery__item gallery__item_center_desktop">
-              <figure class="gallery__item-figure">
-                <picture>
-                  <source media="(max-width: 1023px)" srcset="img/promo-bike-mountain-tablet.jpg, img/promo-bike-mountain-tablet@2x.jpg 2x">
-                  <img src="img/promo-bike-mountain.jpg" srcset="img/promo-bike-mountain@2x.jpg 2x" alt="Горный велосипед" width="342" height="566">
-                </picture>
+            <li class="gallery__item gallery__item_decorated gallery__item_center-position_desktop">
+              <div class="gallery__item-wrapper">
+                <figure class="gallery__item-figure gallery__item-figure_decorated_double-square">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo-bike-mountain.webp 1x, img/promo-bike-mountain@2x.webp 2x">
+                    <!-- 1x: 342*566; 2x: 684*1,132-->
+                    <img src="img/promo-bike-mountain.jpg" srcset="img/promo-bike-mountain@2x.jpg 2x" alt="Горный велосипед" width="342" height="566" data-object-fit="cover">
+                  </picture>
                   <figcaption class="gallery__item-figcaption">
                     <a href="">Горный велосипед</a>
                   </figcaption>
-              </figure>
+                </figure>
+              </div>
             </li>
-            <li class="gallery__item gallery__item_center_tablet">
-              <figure class="gallery__item-figure">
-                <picture>
-                  <source media="(max-width: 1023px)" srcset="img/promo-bike-children-tablet.jpg, img/promo-bike-children-tablet@2x.jpg 2x">
-                  <img src="img/promo-bike-children.jpg" srcset="img/promo-bike-children@2x.jpg 2x" alt="Детский велосипед" width="342" height="513">
-                </picture>
-                <figcaption class="gallery__item-figcaption">
-                  <a href="">Детский велосипед</a>
-                </figcaption>
-              </figure>
+            <li class="gallery__item gallery__item_center-position_tablet">
+              <div class="gallery__item-wrapper">
+                <figure class="gallery__item-figure gallery__item-figure_decorated_small-ellipse">
+                  <picture>
+                    <source type="image/webp" srcset="img/promo-bike-children.webp 1x, img/promo-bike-children@2x.webp 2x">
+                    <!-- 1x: 342*513; 2x: 684*1,026 -->
+                    <img src="img/promo-bike-children.jpg" srcset="img/promo-bike-children@2x.jpg 2x" alt="Детский велосипед" width="342" height="513" data-object-fit="cover">
+                  </picture>
+                  <figcaption class="gallery__item-figcaption">
+                    <a href="">Детский велосипед</a>
+                  </figcaption>
+                </figure>
+              </div>
             </li>
           </ul>
         </div>
@@ -183,8 +192,12 @@
           <div class="map__location-wrapper">
             <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871624637!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2scz!4v1618932848403!5m2!1sru!2scz" style="border: 0;" allowfullscreen=""></iframe>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
                 <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <!-- 1x: 957*530 ; 2x: 1,914*1,060 -->
                 <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x"
                      alt="Адрес магазина по ул. Б. Конюшенная, дом 19/8 Санкт-Петербург" width="957" height="530">
               </picture>

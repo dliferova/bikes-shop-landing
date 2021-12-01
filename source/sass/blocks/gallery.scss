@@ -56,22 +56,16 @@
   }
 }
 
-.gallery__item_center_desktop {
+.gallery__item_center-position_desktop {
   @media (min-width: $desktop-width-min) {
     grid-row: 2 / -1;
   }
 }
 
-.gallery__item_center_tablet {
+.gallery__item_center-position_tablet {
   @media (max-width: $tablet-width-max) {
     grid-column: 4 / 10;
   }
-}
-
-.gallery__item-figure {
-  margin: 0;
-  position: relative;
-  z-index: 10;
 }
 
 .gallery__item-figure img {
@@ -92,14 +86,78 @@
 
 //Стилизация декоративных элементов
 
-.gallery__item:first-child::after {
+.gallery__item-figure {
+  margin: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.gallery__item-figure_decorated_big-ellipse::after {
   display: block;
   content: "";
   width: 180px;
   height: 180px;
-  background-image: url("/img/decorative-elements/ellipse-1.svg");
+  background-image: url("/img/decorative-elements/ellipse.svg");
+  background-repeat: no-repeat;
   position: absolute;
-  top: 30%;
-  left: -20%;
-  z-index: 1;
+  z-index: -1;
+
+  @media (min-width: $desktop-width-min) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -60px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 127px;
+    height: 127px;
+    bottom: 14px;
+    left: -40px;
+  }
+}
+
+.gallery__item-figure_decorated_double-square::before {
+  display: block;
+  content: "";
+  width: 47px;
+  height: 47px;
+  background-image: url("/img/decorative-elements/rectangle-7.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  left: -14px;
+  z-index: 20;
+}
+
+.gallery__item-figure_decorated_double-square::after {
+  display: block;
+  content: "";
+  width: 47px;
+  height: 47px;
+  background-image: url("/img/decorative-elements/rectangle-7.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 20px;
+  right: -13px;
+  z-index: 20;
+}
+
+.gallery__item-figure_decorated_small-ellipse::after {
+  display: block;
+  content: "";
+  width: 95px;
+  height: 95px;
+  background-image: url("/img/decorative-elements/ellipse.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -42px;
+  right: -32px;
+  z-index: 20;
+
+  @media (max-width: $tablet-width-max) {
+    width: 68px;
+    height: 68px;
+    top: -17px;
+    right: -16px;
+  }
 }
