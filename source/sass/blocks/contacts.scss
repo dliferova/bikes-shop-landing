@@ -27,4 +27,8 @@
   &:focus {
     color: rgba($accent-color-darker, 0.5);
   }
+
+  @media(max-width: $tablet-width-max) {
+    padding: 19px 10px;
+  }
 }

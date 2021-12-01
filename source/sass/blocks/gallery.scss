@@ -9,6 +9,7 @@
     font-size: 24px;
     line-height: 41px;
     text-align: center;
+    margin: 0 auto 27px;
   }
 }
 
@@ -26,7 +27,7 @@
     max-width: 596px;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 50px;
-    row-gap: 40px;
+    row-gap: 47px;
     grid-template-rows: repeat(2, max-content);
   }
 
@@ -119,35 +120,39 @@
   @media (max-width: $tablet-width-max) {
     width: 127px;
     height: 127px;
-    bottom: 14px;
-    left: -40px;
+    bottom: 27px;
+    left: -35px;
   }
 }
 
 .gallery__item-figure_decorated_double-square::before {
-  display: block;
-  content: "";
-  width: 47px;
-  height: 47px;
-  background-image: url("/img/decorative-elements/rectangle-7.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -20px;
-  left: -18px;
-  z-index: 20;
+  @media (min-width: $desktop-width-min) {
+    display: block;
+    content: "";
+    width: 47px;
+    height: 47px;
+    background-image: url("/img/decorative-elements/rectangle-7.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    left: -18px;
+    z-index: 20;
+  }
 }
 
 .gallery__item-figure_decorated_double-square::after {
-  display: block;
-  content: "";
-  width: 47px;
-  height: 47px;
-  background-image: url("/img/decorative-elements/rectangle-7.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 33px;
-  right: -23px;
-  z-index: 20;
+  @media (min-width: $desktop-width-min) {
+    display: block;
+    content: "";
+    width: 47px;
+    height: 47px;
+    background-image: url("/img/decorative-elements/rectangle-7.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 33px;
+    right: -23px;
+    z-index: 20;
+  }
 }
 
 .gallery__item-figure_decorated_small-ellipse::after {

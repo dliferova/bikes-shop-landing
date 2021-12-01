@@ -12,6 +12,7 @@
 
   @media (max-width: $tablet-width-max) {
     max-width: 629px;
+    margin: 0 auto 20px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -26,6 +27,11 @@
   text-align: center;
   margin: 0 0 30px;
   font-weight: 600;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
 }
 
 .map__content p {

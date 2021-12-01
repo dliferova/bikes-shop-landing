@@ -18,7 +18,9 @@
 
 
   @media (max-width: $tablet-width-max) {
+    font-size: 18px;
     color: $ordinary-black;
+    margin: 0 0 29px 0;
     max-width: 321px;
   }
 }
@@ -39,9 +41,12 @@
 
   background-color: $accent-color;
 
-  @media (max-width: $tablet-width-max ) {
-    padding: 15px 34px;
-    max-width: 288px;;
+  @media (max-width: $tablet-width-max) {
+    padding: 15px 51px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 288px;
   }
 
   &:hover {

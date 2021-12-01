@@ -1,9 +1,10 @@
 .page-footer__wrapper {
   max-width: 997px;
   padding: 130px 20px 90px;
-  margin: 0 auto ;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width-max) {
+    padding: 34px 0 90px;
     max-width: 698px;
   }
 
@@ -15,4 +16,8 @@
 
 .page-footer__map {
   margin: 0 0 20px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0;
+  }
 }
