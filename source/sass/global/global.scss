@@ -1,7 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 .visually-hidden {
@@ -20,4 +24,8 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
