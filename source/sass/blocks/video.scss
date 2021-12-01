@@ -1,7 +1,64 @@
-.video {
-  background-color: $ordinary-black;
+.video__wrapper {
   min-height: 706px;
+  padding: 120px 0 0;
   position: relative;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 70px 0 0;
+    min-height: 413px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 64px 15px 0;
+    min-height: 384px;
+  }
+}
+
+.video__main-content {
+  width: 929px;
+  height: 522px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: $tablet-width-max) {
+    width: 503px;
+    height: 282px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+    height: 162px;
+  }
+}
+
+.video__container {
+  position: relative;
+}
+
+.video__play-button {
+  content: "";
+  width: 65px;
+  height: 65px;
+  background-image: url("/img/decorative-elements/play.svg");
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+
+  @media (max-width: $mobile-width-only) {
+    top: 35%;
+  }
+}
+
+.video__text-content {
+  max-width: 360px;
+  margin: 0 auto 56px;
+  text-align: center;
 }
 
 .video__text-content h2 {
@@ -9,6 +66,11 @@
   line-height: 30px;
   font-weight: 600;
   color: $ordinary-white;
+  margin: 0 0 20px;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+  }
 }
 
 .video__text-content p {
@@ -16,4 +78,5 @@
   line-height: 28px;
   color: $ordinary-white;
   font-weight: lighter;
+  margin: 0;
 }

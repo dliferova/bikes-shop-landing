@@ -153,13 +153,18 @@
     </section>
 
     <section class="page-main__video video" id="promo-video">
-      <div class="video__container">
+      <div class="video__wrapper">
         <div class="video__text-content">
           <h2>Видео про велосипеды</h2>
           <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         </div>
         <div class="video__main-content">
-          <video width="400" height="300" controls="controls" poster="img/video-intro.jpg"></video>
+          <div class="video__container">
+            <button class="video__play-button" type="button">
+              <span class="visually-hidden">Включить видео</span>
+            </button>
+            <video width="100%" height="auto" controls="controls" poster="img/video-intro.jpg"></video>
+          </div>
         </div>
       </div>
     </section>
