@@ -7,12 +7,12 @@
 .intro__container {
   @media (min-width: $desktop-width-min) {
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr 327px;
     column-gap: 150px;
     min-height: 825px;
     max-width: 880px;
     margin: 0 auto;
+    padding: 316px 0 221px 0;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -50,7 +50,7 @@
 }
 
 .intro__content-logo-wrapper {
-  margin: 0 0 30px 0;
+  margin: 0 0 21px 0;
 
   @media (max-width: $tablet-width-max) {
     position: absolute;

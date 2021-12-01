@@ -49,6 +49,10 @@
   counter-increment: list-counter;
   margin: 0 38px 0 0;
 
+  &:last-child {
+    margin: 0;
+  }
+
   @media (max-width: $tablet-width-max) {
     margin: 0;
   }
@@ -74,6 +78,6 @@
   text-align: center;
   color: #0ad9c6;
   border-radius: 4px;
-  margin-bottom: 22px;
+  margin: 0 0 17px 0;
 }
 

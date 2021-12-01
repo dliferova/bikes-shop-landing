@@ -10,6 +10,11 @@
 
 .site-navigation__item {
   display: block;
+  margin: 0 117px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
 
   @media (max-width: $tablet-width-max) {
     margin: 0 0 30px 0;

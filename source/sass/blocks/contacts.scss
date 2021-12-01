@@ -1,9 +1,9 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  max-width: 558px;
+  max-width: 582px;
   margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
@@ -16,7 +16,7 @@
   color: rgba($ordinary-black, 0.5);
   font-size: 16px;
   line-height: 24px;
-  padding: 20px 10px;
+  padding: 17px 10px;
   display: flex;
   align-items: center;
 

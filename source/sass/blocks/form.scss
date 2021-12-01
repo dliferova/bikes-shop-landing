@@ -1,6 +1,7 @@
 .form__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 10px 0 0 0;
 
   @media (max-width: $tablet-width-max) {
     align-items: center;
@@ -10,8 +11,11 @@
 .form p {
   font-size: 17px;
   line-height: 28px;
+  letter-spacing: 0.5px;
   color: $ordinary-white;
   text-align: center;
+  margin: 0 0 15px 0;
+
 
   @media (max-width: $tablet-width-max) {
     color: $ordinary-black;
