@@ -69,8 +69,16 @@
 }
 
 .gallery__item-figure img {
+  display: block;
   width: 100%;
   border-radius: 10px;
+  transition: transform 300ms;
+
+  @media (max-width: $tablet-width-max) {
+    object-position: center 75%;
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 .gallery__item-figcaption {
