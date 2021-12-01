@@ -18,19 +18,36 @@
 
 .site-navigation__item a {
   font-weight: lighter;
-  color: $ordinary-white;
-  opacity: 0.7;
+  color: rgba($ordinary-white, 0.7);
   display: block;
   padding: 10px;
   text-decoration: none;
+
+  &:hover {
+    color: rgba($ordinary-white, 1);
+  }
+
+  &:active {
+    color: rgba($ordinary-white, 0.3);
+  }
 
   @media (max-width: $tablet-width-max) {
     color: $dark-grey;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $background-pink;
+    background-color: $background-grey-mobile;
     padding: 15px;
+
+    &:hover {
+      color: $dark-grey;
+      background-color: rgba($background-grey-mobile-hover, 0.3);
+    }
+
+    &:active {
+      color: rgba($dark-grey, 0.3);
+      background-color: rgba($background-grey-mobile-hover, 0.3);
+    }
   }
 }
 

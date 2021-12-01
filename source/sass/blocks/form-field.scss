@@ -11,23 +11,32 @@
   padding: 14px 20px 10px 29px;
   margin: 0 0 20px 0;
 
+  @media (min-width: $desktop-width-min) {
+    &:hover {
+      border: 1px solid $input-grey-darker;
+      background-color: rgba($ordinary-white, 0.7);
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      outline: 1px solid $border-input-error;
+    }
+
+    &:focus {
+      outline: 0;
+      background-color: rgba($ordinary-white, 0.7);
+      border: 1px solid $input-grey-darker;
+      color: $ordinary-white;
+    }
+  }
+
   @media (max-width: $tablet-width-max) {
     width: 288px;
-  }
 
-  &:hover {
-    border: 1px solid $input-grey-darker;
-    background-color: rgba($ordinary-white, 0.7);
-  }
-
-  &:invalid:not(:placeholder-shown) {
-    outline: 1px solid $border-input-error;
-  }
-
-  &:focus {
-    outline: 0;
-    background-color: rgba($ordinary-white, 0.7);
-    border: 1px solid $input-grey-darker;
-    color: $ordinary-white;
+    &:focus {
+      outline: 0;
+      background-color: rgba($ordinary-white, 0.7);
+      border: 1px solid $input-grey-darker;
+      color: $ordinary-black;
+    }
   }
 }

@@ -39,6 +39,10 @@
 .gallery__item {
   display: block;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   @media (min-width: $desktop-width-min) {
     grid-row: 1 / -1;
   }

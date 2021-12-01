@@ -14,11 +14,18 @@
 .contacts-phone a,
 .contacts-mail a {
   text-decoration: none;
-  color: $ordinary-black;
-  opacity: 0.5;
+  color: rgba($ordinary-black, 0.5);
   font-size: 16px;
   line-height: 24px;
   padding: 20px 10px;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: rgba($accent-color, 0.5);
+  }
+
+  &:focus {
+    color: rgba($accent-color-darker, 0.5);
+  }
 }
