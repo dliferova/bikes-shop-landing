@@ -66,6 +66,8 @@
 
 .gallery__item-figure {
   margin: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .gallery__item-figure img {
@@ -82,4 +84,18 @@
   font-size: 22px;
   line-height: 34px;
   color: $ordinary-black;
+}
+
+//Стилизация декоративных элементов
+
+.gallery__item:first-child::after {
+  display: block;
+  content: "";
+  width: 180px;
+  height: 180px;
+  background-image: url("/img/decorative-elements/ellipse-1.svg");
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  z-index: 1;
 }
