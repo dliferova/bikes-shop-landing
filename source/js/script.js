@@ -19,30 +19,31 @@ const hideMenu = () => {
   navigationElement.classList.remove('navigation_opened');
 };
 
+const scrollTo = (elementClassToScroll) => {
+  hideMenu();
+  document.querySelector(elementClassToScroll).scrollIntoView({behavior: "smooth"})
+}
+
 siteNavigation.querySelector('#nav-item-about-us')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    hideMenu();
-    document.querySelector('.facts').scrollIntoView({behavior: "smooth"})
-  })
+    scrollTo('.facts');
+  });
 
 siteNavigation.querySelector('#nav-item-types-bike')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    hideMenu();
-    document.querySelector('.gallery').scrollIntoView({behavior: "smooth"})
-  })
+    scrollTo('.gallery');
+  });
 
 siteNavigation.querySelector('#nav-item-promo-video')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    hideMenu();
-    document.querySelector('.video').scrollIntoView({behavior: "smooth"})
-  })
+    scrollTo('.video');
+  });
 
 siteNavigation.querySelector('#nav-item-contacts')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    hideMenu();
-    document.querySelector('.contacts').scrollIntoView({behavior: "smooth"})
-  })
+    scrollTo('.contacts');
+  });
