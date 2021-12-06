@@ -27,7 +27,7 @@
     align-items: center;
     background-color: $ordinary-black;
     min-height: 340px;
-    background-image: url("/img/main-intro-bike-tablet.jpg");
+    background-image: url("../img/main-intro-bike-tablet.jpg");
     background-repeat: no-repeat;
     background-size: auto 340px;
     background-position-x: center;
@@ -36,19 +36,19 @@
     margin: 0 0 60px 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/main-intro-bike-tablet@2x.jpg");
+      background-image: url("../img/main-intro-bike-tablet@2x.jpg");
     }
   }
 
   @media (max-width: $mobile-width-only) {
     background-color: $ordinary-black;
-    background-image: url("/img/main-intro-bike-mobile.jpg");
+    background-image: url("../img/main-intro-bike-mobile.jpg");
     background-size: 320px 390px;
     padding: 124px 0 64px 0;
     margin: 0 0 56px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("/img/main-intro-bike-mobile@2x.jpg");
+        background-image: url("../img/main-intro-bike-mobile@2x.jpg");
       }
   }
 }

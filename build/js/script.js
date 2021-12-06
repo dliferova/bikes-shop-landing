@@ -27,23 +27,23 @@ const scrollTo = (elementClassToScroll) => {
 siteNavigation.querySelector('#nav-item-about-us')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    scrollTo('.facts')
+    scrollTo('.facts');
   });
 
 siteNavigation.querySelector('#nav-item-types-bike')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    scrollTo('.gallery')
+    scrollTo('.gallery');
   });
 
 siteNavigation.querySelector('#nav-item-promo-video')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    scrollTo('.video')
+    scrollTo('.video');
   });
 
 siteNavigation.querySelector('#nav-item-contacts')
   .addEventListener('click', (evt) => {
     evt.preventDefault();
-    scrollTo('.contacts')
+    scrollTo('.contacts');
   });
