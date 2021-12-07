@@ -16,8 +16,9 @@
   position: relative;
 
   @include resetting-styles-list;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  row-gap: 20px;
   counter-reset: list-counter;
   list-style: none;
   max-width: 1166px;
@@ -26,7 +27,6 @@
 
 
   @media (max-width: $tablet-width-max) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 43px;
