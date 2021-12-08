@@ -16,17 +16,17 @@
   position: relative;
 
   @include resetting-styles-list;
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
-  row-gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   counter-reset: list-counter;
   list-style: none;
-  max-width: 1166px;
   margin: 0 auto;
   padding: 0;
 
 
   @media (max-width: $tablet-width-max) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 43px;
@@ -47,11 +47,7 @@
   max-width: 263px;
   text-align: center;
   counter-increment: list-counter;
-  margin: 0 38px 0 0;
-
-  &:last-child {
-    margin: 0;
-  }
+  margin: 0 19px 20px;
 
   @media (max-width: $tablet-width-max) {
     margin: 0;
