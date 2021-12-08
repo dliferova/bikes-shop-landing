@@ -71,10 +71,18 @@
   border-radius: 10px;
   transition: transform 300ms;
 
+  @media (min-width: $desktop-width-min) {
+    object-fit: contain;
+  }
+
   @media (max-width: $tablet-width-max) {
     object-position: center 75%;
     height: 300px;
     object-fit: cover;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 270px;
   }
 }
 
