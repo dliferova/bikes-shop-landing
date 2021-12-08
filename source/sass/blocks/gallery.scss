@@ -40,10 +40,6 @@
 .gallery__item {
   display: block;
 
-  &:hover {
-    opacity: 0.5;
-  }
-
   @media (min-width: $desktop-width-min) {
     grid-row: 1 / -1;
   }
@@ -87,10 +83,12 @@
   padding: 20px 0 0 0;
 }
 
-.gallery__item-figcaption a {
+.gallery__item-figcaption h3 {
   font-size: 22px;
   line-height: 34px;
+  font-weight: 600;
   color: $ordinary-black;
+  margin: 0;
 }
 
 //Стилизация декоративных элементов
@@ -99,6 +97,14 @@
   margin: 0;
   position: relative;
   z-index: 10;
+}
+
+.gallery__item-figure a {
+  display: block;
+
+  &:hover img {
+    opacity: 0.8;
+  }
 }
 
 .gallery__item-figure_decorated_big-ellipse::after {
