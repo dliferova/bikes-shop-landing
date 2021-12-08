@@ -53,13 +53,13 @@
   }
 }
 
-.gallery__item_center-position_desktop {
+.gallery__list li:nth-child(3n+2) {
   @media (min-width: $desktop-width-min) {
     grid-row: 2 / -1;
   }
 }
 
-.gallery__item_center-position_tablet {
+.gallery__list li:nth-child(3n+3) {
   @media (max-width: $tablet-width-max) {
     grid-column: 4 / 10;
   }
@@ -73,6 +73,7 @@
 
   @media (min-width: $desktop-width-min) {
     object-fit: contain;
+    height: auto;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -115,14 +116,15 @@
   }
 }
 
-.gallery__item-figure_decorated_big-ellipse::after {
+.gallery__item-figure_decorated_big-ellipse::before {
   display: block;
   content: "";
+  position: absolute;
   width: 180px;
   height: 180px;
-  background-image: url("../img/decorative-elements/ellipse.svg");
-  background-repeat: no-repeat;
-  position: absolute;
+  box-sizing: border-box;
+  border: 27px solid $accent-color;
+  border-radius: 50%;
   z-index: -1;
 
   @media (min-width: $desktop-width-min) {
@@ -136,6 +138,7 @@
     height: 127px;
     bottom: 27px;
     left: -35px;
+    border: 18px solid $accent-color;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -149,8 +152,9 @@
     content: "";
     width: 47px;
     height: 47px;
-    background-image: url("../img/decorative-elements/rectangle-7.svg");
-    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: 8px solid $accent-color;
+    border-radius: 0;
     position: absolute;
     top: -20px;
     left: -18px;
@@ -164,8 +168,9 @@
     content: "";
     width: 47px;
     height: 47px;
-    background-image: url("../img/decorative-elements/rectangle-7.svg");
-    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: 8px solid #0ad9c6;
+    border-radius: 0;
     position: absolute;
     bottom: 33px;
     right: -23px;
@@ -178,8 +183,8 @@
   content: "";
   width: 95px;
   height: 95px;
-  background-image: url("../img/decorative-elements/ellipse.svg");
-  background-repeat: no-repeat;
+  border: 17px solid $accent-color;
+  border-radius: 50%;
   position: absolute;
   top: -42px;
   right: -32px;
@@ -190,5 +195,6 @@
     height: 68px;
     top: -17px;
     right: -16px;
+    border: 13px solid $accent-color;
   }
 }
