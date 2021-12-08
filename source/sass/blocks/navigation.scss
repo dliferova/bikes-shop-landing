@@ -1,9 +1,9 @@
 .navigation__list {
   @include resetting-styles-list;
-  width: 874px;
+  width: 845px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width-max) {
