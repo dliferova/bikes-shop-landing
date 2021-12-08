@@ -21,14 +21,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  grid-template-rows: 30px max-content;
+  row-gap: 20px;
 
   @media (max-width: $tablet-width-max) {
     max-width: 596px;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, max-content);
     column-gap: 50px;
     row-gap: 47px;
-    grid-template-rows: repeat(2, max-content);
   }
 
   @media (max-width: $mobile-width-only) {
@@ -39,10 +39,6 @@
 
 .gallery__item {
   display: block;
-
-  @media (min-width: $desktop-width-min) {
-    grid-row: 1 / -1;
-  }
 
   @media (max-width: $tablet-width-max) {
     grid-column: span 6;
@@ -55,7 +51,7 @@
 
 .gallery__list li:nth-child(3n+2) {
   @media (min-width: $desktop-width-min) {
-    grid-row: 2 / -1;
+    padding-top: 30px;
   }
 }
 
