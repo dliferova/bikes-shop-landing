@@ -5,6 +5,7 @@
   margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
+    display: flex;
     flex-direction: column;
     max-width: 280px;
     align-items: flex-start;
