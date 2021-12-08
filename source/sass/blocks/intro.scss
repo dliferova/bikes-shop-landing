@@ -29,8 +29,8 @@
     min-height: 340px;
     background-image: url("../img/main-intro-bike-tablet.jpg");
     background-repeat: no-repeat;
-    background-size: auto 340px;
-    background-position-x: center;
+    background-size: cover;
+    background-position: center;
     position: relative;
     padding: 65px 0 0 0;
     margin: 0 0 60px 0;
@@ -43,7 +43,7 @@
   @media (max-width: $mobile-width-only) {
     background-color: $ordinary-black;
     background-image: url("../img/main-intro-bike-mobile.jpg");
-    background-size: 320px 390px;
+    background-size: cover;
     padding: 124px 0 64px 0;
     margin: 0 0 56px;
 
