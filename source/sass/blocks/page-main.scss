@@ -13,10 +13,10 @@
 }
 
 .page-main__facts {
-  padding: 150px 20px 150px;
+  padding: 150px 20px 130px 20px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 70px 20px;
+    padding: 70px 20px 67px 20px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -26,14 +26,14 @@
 
 .page-main__gallery {
   background-color: $background-grey;
-  padding: 130px 0 146px 0;
+  padding: 150px 0 148px 0;
 
   @media (max-width: $tablet-width-max) {
-    padding: 50px 20px 70px;
+    padding: 48px 20px 70px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 50px 20px 16px;
+    padding: 50px 20px 12px;
   }
 }
 
