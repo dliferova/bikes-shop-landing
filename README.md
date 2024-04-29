@@ -1,14 +1,14 @@
-# Проект Велосипеды
-## Краткая инструкция по работе
-### Для начала работы у вас должент быть установлен:
+# Bicycles Project
+## Brief Work Instructions
+### Before you start, make sure you have installed:
 * Node.js v.10.15.3
 * Gulp v4
 * npm last version
-## Основные команды для работы
-* Установка - `npm i`
-* Запуск локального сервера - `npm start`
-* Сборка проекта без запуска локального сервера - `npm run-script build`
-* Запуск тестирования на соответствия код-гайдам - `npm test`
+## Key commands for operation
+* Installation - `npm i`
+* Launching the local server - `npm start`
+* Building the project without launching the local server - `npm run-script build`
+* Running code linting tests - `npm test`
 
-## Все разработка ведётся в директории `source`
-## Итоговый код попадает в директорию `build`
+## All development is done in the `source` directory
+## The final code goes into the `build` directory
