@@ -10,5 +10,5 @@
 * Building the project without launching the local server - `npm run-script build`
 * Running code linting tests - `npm test`
 
-## All development is done in the `source` directory
-## The final code goes into the `build` directory
+### All development is done in the `source` directory
+### The final code goes into the `build` directory
